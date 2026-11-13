@@ -22,7 +22,7 @@ The static output is generated in `dist/`.
 
 ## Deployment
 
-Target domain: https://cieslar.fr
+Target domain: https://www.cieslar.fr (cieslar.fr redirects to www).
 
 The GitHub Pages workflow is currently manual-only. It builds the site from the committed source and publishes only the generated static output.
 
