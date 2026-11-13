@@ -1,0 +1,94 @@
+---
+const title = 'Axel Cieslar | Product Leadership · SaaS & AI';
+const description = 'Product leadership in B2B SaaS, from discovery to launch. Agent systems combining persistent context, connected tools and reusable workflows.';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#14181c" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://cieslar.fr/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://cieslar.fr/" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <span class="monogram" aria-label="Axel Cieslar">AC.</span>
+        <span>cieslar.fr</span>
+      </header>
+      <main>
+        <p class="eyebrow">Product Leadership · B2B SaaS · Applied AI</p>
+        <h1>Axel Cieslar<span aria-hidden="true">.</span></h1>
+        <p class="bio">Experience across industries and international teams. Hands-on from discovery and specifications through to deployment and launch.</p>
+        <p class="bio">I design agent systems that combine persistent context, connected tools and reusable workflows, with human oversight built in.</p>
+        <a href="https://www.linkedin.com/in/axelcieslar/">Find me on LinkedIn <span aria-hidden="true">↗</span></a>
+      </main>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: dark;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #e8edf1;
+    background: #14181c;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; border-top: 4px solid #a5c9e8; }
+  p, h1 { margin: 0; }
+  ::selection { background: #a5c9e8; color: #14181c; }
+  .page {
+    max-width: 960px;
+    min-height: calc(100svh - 4px);
+    margin-inline: auto;
+    padding-inline: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 26px;
+    color: #a7afb7;
+    font-size: 13px;
+  }
+  .monogram { color: #a5c9e8; font-size: 24px; font-weight: 650; letter-spacing: -1.5px; }
+  main { flex: 1; align-content: center; padding-block: 48px 64px; }
+  .eyebrow { color: #a5c9e8; font-size: 13px; line-height: 1.7; letter-spacing: 0.025em; }
+  h1 { margin-block: 14px 24px; font-size: clamp(2.75rem, 9vw, 6rem); font-weight: 650; line-height: 1.08; letter-spacing: -0.065em; }
+  h1 span { color: #a5c9e8; }
+  .bio { max-width: 580px; font-size: 19px; line-height: 1.65; }
+  .bio + .bio { margin-top: 12px; color: #a7afb7; }
+  a { display: inline-flex; align-items: center; gap: 18px; min-height: 44px; margin-top: 28px; color: #a5c9e8; font-size: 16px; font-weight: 600; text-underline-offset: 6px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid #a5c9e8; outline-offset: 6px; }
+  a span { font-size: 21px; }
+  @media (max-width: 600px) {
+    .page { padding-inline: 24px; }
+    header { padding-block: 20px; }
+    main { padding-block: 32px 40px; }
+    .bio { font-size: 17px; }
+    .eyebrow { font-size: 12px; }
+  }
+  @media print {
+    :root { color-scheme: light; color: #292d30; background: white; }
+    .page { min-height: auto; }
+    main { padding-block: 32px; }
+    h1 { font-size: 48px; }
+    .monogram, .eyebrow, h1 span, a { color: #203e58; }
+    header, .bio + .bio { color: #62676a; }
+  }
+</style>
